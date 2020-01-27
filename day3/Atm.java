@@ -21,12 +21,12 @@ import day3.Account;
 public class Atm {
 
     // array to store accounts iid
-    Account[] customerId = new Account[10];
-    Scanner input = new Scanner(System.in);
-    int id;
-    int choiceOption;
-    boolean exit = false;
-    boolean isValidAccount = false;
+    private Account[] customerId = new Account[10];
+    private Scanner input = new Scanner(System.in);
+    private int id;
+    private int choiceOption;
+    private boolean exit = false;
+    private boolean isValidAccount = false;
 
     public static void main(String[] args) {
         Atm atm = new Atm();
@@ -55,7 +55,7 @@ public class Atm {
 
     private void mainMenu() {
         System.out.println("Main Menu \n1: check balance \n2: withdraw \n3: deposit \n4: exit ");
-        System.out.println("Enter a choice");
+        System.out.print("Enter a choice ");
         this.choiceOption = input.nextInt();
         this.choiceSelected();
     }
@@ -88,14 +88,14 @@ public class Atm {
             System.out.print("Enter amount you want to withdraw: ");
             int amount = input.nextInt();
             customerId[id].withdrawFromAccount(amount);
-            System.out.println("Successful, you withdrew " + amount);
+            System.out.println("Successful, you withdrew $" + amount);
         }
 
         if (choiceOption == 3) {
             System.out.print("Enter amount you want to deposit: ");
             int amount = input.nextInt();
             double amountIn = customerId[id].depositToAccount(amount);
-            System.out.println("Successful, you have " + amountIn + " in your account");
+            System.out.println("Successful, you have $" + amountIn + " in your account");
         }
 
         if (choiceOption == 4) {
