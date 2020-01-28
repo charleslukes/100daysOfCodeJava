@@ -20,7 +20,7 @@ public class Account {
     private double InterestRate;
     private Date dateCreated;
 
-    Account() {
+    public Account() {
         // assign all default values
         this.id = 0;
         this.balance = 0;
@@ -30,7 +30,7 @@ public class Account {
         this.dateCreated = new Date();
     }
 
-    Account(int id, double balance) {
+    public Account(int id, double balance) {
         this();
 
         // update the id and balance
