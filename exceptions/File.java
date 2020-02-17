@@ -1,5 +1,5 @@
 
-package exception;
+package exceptions;
 
 /**
  * File
