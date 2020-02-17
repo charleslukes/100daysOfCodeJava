@@ -4,7 +4,7 @@
  * prompt the user to read the number again if the input is incorrect
  */
 
-package exception;
+package exceptions;
 
 import java.util.*;
 
