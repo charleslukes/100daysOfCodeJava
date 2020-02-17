@@ -5,7 +5,7 @@
  * is created or “Directory already exists” if the directory already exists.
  */
 
-package exception;
+package exceptions;
 
 /**
  * CreateFile
