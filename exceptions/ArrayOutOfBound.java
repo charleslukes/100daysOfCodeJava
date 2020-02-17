@@ -6,7 +6,7 @@
    message Out of Bounds.
  */
 
-package exception;
+package exceptions;
 
 /**
  * ArrayOutOfBound
